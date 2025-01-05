@@ -6,7 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preprods": "NODE_ENV=production next start",
+    "prettier": "prettier --write \"*.{json,js,md,yaml,yml}\"",
+    "lint:js": "npm run prettier && eslint --fix .",
+    "analyze": "ANALYZE=true npm run build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^19.0.0",
