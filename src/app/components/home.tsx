@@ -1,3 +1,4 @@
+import CouponTable from "./CouponTable";
 import NavBar from "./navbar";
 import WelcomeMessage from "./WelcomeMessage";
 
@@ -7,6 +8,7 @@ export default function Homepage() {
       <div className="bg-gray-700">
         <NavBar></NavBar>
         <WelcomeMessage></WelcomeMessage>
+        <CouponTable></CouponTable>
       </div>
     </>
   );
