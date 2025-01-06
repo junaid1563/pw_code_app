@@ -28,7 +28,7 @@ export default function CouponTable() {
           Coupon Codes
         </p>
         <table className="w-11/12  text-xs md:text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
-          <thead className="text-xs  uppercase bg-white dark:bg-white text-black text-center">
+          <thead className="text-xs  uppercase bg-gray-300  text-black text-center">
             <tr>
               <th scope="col" className="px-6 py-3">
                 Course
@@ -45,17 +45,17 @@ export default function CouponTable() {
             {elements.map((item, index) => {
               return (
                 <tr
-                  className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                  className="bg-white  text-black border-b dark:bg-gray-800 dark:border-gray-700"
                   key={index}
                 >
                   <td
                     scope="row"
-                    className="px-6 py-4 font-medium  whitespace-nowrap text-white"
+                    className="px-6 py-4 font-medium  whitespace-nowrap text-black"
                   >
                     {item.course}
                   </td>
-                  <td className="px-6 py-4 text-white">{item.discount}</td>
-                  <td className="px-6 py-4 text-white">{item.code}</td>
+                  <td className="px-6 py-4 text-black">{item.discount}</td>
+                  <td className="px-6 py-4 text-black">{item.code}</td>
                 </tr>
               );
             })}
@@ -67,14 +67,14 @@ export default function CouponTable() {
                 >
                   <td
                     scope="row"
-                    className="px-6 py-4 font-medium whitespace-nowrap text-white "
+                    className="px-6 py-4 font-medium whitespace-nowrap text-black "
                   >
                     {item.course}
                   </td>
-                  <td className="px-6 py-4 font-medium whitespace-nowrap text-white">
+                  <td className="px-6 py-4 font-medium whitespace-nowrap text-black">
                     {item.discount}
                   </td>
-                  <td className="px-6 py-4 font-medium whitespace-nowrap text-white">
+                  <td className="px-6 py-4 font-medium whitespace-nowrap text-black">
                     <a
                       href="https://api.whatsapp.com/send?phone=+919784112732&text=Hello"
                       target="_blank"
