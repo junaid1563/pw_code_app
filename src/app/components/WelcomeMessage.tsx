@@ -3,9 +3,9 @@
 export default function WelcomeMessage() {
   return (
     <>
-      <div className="container w-screen  py-20 px-60   text-white flex justify-center  bg-gray-700 ">
+      <div className="container w-screen  py-20 px-20  text-white flex justify-center  bg-gray-700 ">
         <div className="text-lg">
-          <p className="text-4xl pb-20 flex justify-center">
+          <p className="text-2xl md:text-4xl pb-20 flex justify-center">
             Welcome To PW Coupon Codes
           </p>
           Welcome to Your Ultimate Source for Free Coupon Codes for
@@ -28,8 +28,8 @@ export default function WelcomeMessage() {
           believe that everyone should have the opportunity to pursue their
           dreams, and we're here to help you make that possible without breaking
           the bank.
-          <div className="my-10">
-            <img src='/welcomebg.jpeg' alt="bg" />
+          <div className="my-10 w-9/12  md:mx-40">
+            <img src="/welcomebg.jpeg" alt="bg" />
           </div>
           <p className=" font-bold py-4">Why Choose Us?</p>
           <ol className="list-decimal px-4">

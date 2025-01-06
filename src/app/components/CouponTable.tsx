@@ -1,14 +1,14 @@
 "use client";
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/solid";
 export default function CouponTable() {
   const elements = [
-    { course: "JEE", discount: "90%", code: "NAVED90" },
-    { course: "NEET", discount: "90%", code: "NAVED90" },
-    { course: "CLAT", discount: "90%", code: "NAVED90" },
-    { course: "GATE", discount: "90%", code: "NAVED90" },
-    { course: "SSC", discount: "90%", code: "NAVED90" },
-    { course: "UPSC", discount: "90%", code: "NAVED90" },
-    { course: "Board Exams", discount: "90%", code: "NAVED90" },
+    { course: "JEE", discount: "90%", code: "NAVAHM0001" },
+    { course: "NEET", discount: "90%", code: "NAVAHM0001" },
+    { course: "CLAT", discount: "90%", code: "NAVAHM0001" },
+    { course: "GATE", discount: "90%", code: "NAVAHM0001" },
+    { course: "SSC", discount: "90%", code: "NAVAHM0001" },
+    { course: "UPSC", discount: "90%", code: "NAVAHM0001" },
+    { course: "Board Exams", discount: "90%", code: "NAVAHM0001" },
   ];
 
   const getCodeElements = [
@@ -23,12 +23,12 @@ export default function CouponTable() {
 
   return (
     <>
-      <div className="relative overflow-x-auto container w-screen  py-20 px-60   text-white ">
-        <p className="text-2xl flex justify-center font-bold mb-10">
+      <div className="relative overflow-x-auto container w-screen  py-20 px-20  text-white ">
+        <p className="text-3xl flex justify-center font-bold mb-10">
           Coupon Codes
         </p>
-        <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <table className="w-11/12  text-xs md:text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
+          <thead className="text-xs  uppercase bg-white dark:bg-white text-black text-center">
             <tr>
               <th scope="col" className="px-6 py-3">
                 Course
@@ -41,21 +41,21 @@ export default function CouponTable() {
               </th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-center">
             {elements.map((item, index) => {
               return (
                 <tr
                   className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
                   key={index}
                 >
-                  <th
+                  <td
                     scope="row"
-                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                    className="px-6 py-4 font-medium  whitespace-nowrap text-white"
                   >
                     {item.course}
-                  </th>
-                  <td className="px-6 py-4">{item.discount}</td>
-                  <td className="px-6 py-4">{item.code}</td>
+                  </td>
+                  <td className="px-6 py-4 text-white">{item.discount}</td>
+                  <td className="px-6 py-4 text-white">{item.code}</td>
                 </tr>
               );
             })}
@@ -65,23 +65,30 @@ export default function CouponTable() {
                   className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
                   key={index}
                 >
-                  <th
+                  <td
                     scope="row"
-                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                    className="px-6 py-4 font-medium whitespace-nowrap text-white "
                   >
                     {item.course}
-                  </th>
-                  <td className="px-6 py-4">{item.discount}</td>
-                  <td className="px-6 py-4">
+                  </td>
+                  <td className="px-6 py-4 font-medium whitespace-nowrap text-white">
+                    {item.discount}
+                  </td>
+                  <td className="px-6 py-4 font-medium whitespace-nowrap text-white">
                     <a
-                      href="https://api.whatsapp.com/send?phone=9971364338&text=Hello"
+                      href="https://api.whatsapp.com/send?phone=+919784112732&text=Hello"
                       target="_blank"
                     >
                       <button
                         type="button"
                         className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
                       >
-                        Green
+                        <ChatBubbleLeftRightIcon
+                          color=""
+                          aria-hidden="true"
+                          className="inline size-6 group-data-[open]:hidden"
+                        />
+                        Get Coupon Code
                       </button>
                     </a>
                   </td>
