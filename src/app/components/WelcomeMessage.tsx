@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 export default function WelcomeMessage() {
   return (
@@ -27,6 +28,9 @@ export default function WelcomeMessage() {
           believe that everyone should have the opportunity to pursue their
           dreams, and we're here to help you make that possible without breaking
           the bank.
+          <div className="my-10">
+            <img src='/welcomebg.jpeg' alt="bg" />
+          </div>
           <p className=" font-bold py-4">Why Choose Us?</p>
           <ol className="list-decimal px-4">
             <li>
