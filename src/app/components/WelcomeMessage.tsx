@@ -1,7 +1,7 @@
 export default function WelcomeMessage() {
   return (
     <>
-      <div className="container mx-auto  py-20 px-60  bg-inherit flex justify-center">
+      <div className="container w-screen  py-20 px-60   text-white flex justify-center  bg-gray-700 ">
         <div className="text-lg">
           <p className="text-4xl pb-20 flex justify-center">
             Welcome To PW Coupon Codes

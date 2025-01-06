@@ -4,8 +4,10 @@ import WelcomeMessage from "./WelcomeMessage";
 export default function Homepage() {
   return (
     <>
-      <NavBar></NavBar>
-      <WelcomeMessage></WelcomeMessage>
+      <div className="bg-gray-700">
+        <NavBar></NavBar>
+        <WelcomeMessage></WelcomeMessage>
+      </div>
     </>
   );
 }
