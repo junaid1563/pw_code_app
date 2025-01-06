@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function WelcomeMessage() {
   return (
     <>
@@ -20,11 +21,11 @@ export default function WelcomeMessage() {
           like JEE, NEET, or looking to enhance your knowledge in various
           subjects, PhysicsWallah offers a range of affordable and comprehensive
           courses. But we understand that education can sometimes be expensive,
-          which is where we come in. Here at PW Coupon Codes, we’ve created a
+          which is where we come in. Here at PW Coupon Codes, we've created a
           hassle-free platform that brings you updated and verified coupon
           codes, discounts, and offers for all the PhysicsWallah courses. We
           believe that everyone should have the opportunity to pursue their
-          dreams, and we’re here to help you make that possible without breaking
+          dreams, and we're here to help you make that possible without breaking
           the bank.
           <p className=" font-bold py-4">Why Choose Us?</p>
           <ol className="list-decimal px-4">
@@ -36,9 +37,9 @@ export default function WelcomeMessage() {
               your investment in your education.{" "}
             </li>
             <li>
-              <span className="font-bold">Easy-to-Find Codes</span>: We’ve
+              <span className="font-bold">Easy-to-Find Codes</span>: We've
               streamlined the process for you. Simply browse through our
-              website, and you’ll find all the available coupon codes, along
+              website, and you'll find all the available coupon codes, along
               with step-by-step instructions on how to apply them during
               checkout. We make it easy for you to save money while investing in
               your future.
